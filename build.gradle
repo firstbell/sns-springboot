@@ -41,7 +41,7 @@ node {
 }
 
 task npmBuild(type: NpmTask) {
-	args = ["CI=npm""run", "build"]
+	args = ["CI=npm", "run", "build"]
 }
 
 task copyFrontEnd(type: Copy) {
