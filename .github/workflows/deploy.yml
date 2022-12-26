@@ -38,5 +38,3 @@ jobs:
         # with:
           # arguments: build
         run: ./gradlew clean build --exclude-task test
-      - name: Deploy to Koyeb
-        run: koyeb service redeploy sns/sns-springboot
