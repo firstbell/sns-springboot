@@ -41,7 +41,7 @@ node {
 }
 
 task npmBuild(type: NpmTask) {
-	process.env['CI'] = "false"
+	System.env['CI'] = "false"
 	args = ["run", "build"]
 }
 
