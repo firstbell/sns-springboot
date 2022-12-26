@@ -41,7 +41,6 @@ node {
 }
 
 task npmBuild(type: NpmTask) {
-	env.CI = ""
 	args = ["run", "build"]
 }
 
