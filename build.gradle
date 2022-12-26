@@ -41,7 +41,8 @@ node {
 }
 
 task npmBuild(type: NpmTask) {
-	args = ["CI='false'", "run", "build"]
+	process.env['CI'] = "false"
+	args = ["run", "build"]
 }
 
 task copyFrontEnd(type: Copy) {
